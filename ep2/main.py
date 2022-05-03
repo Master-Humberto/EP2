@@ -28,7 +28,6 @@ l= []
 cores = []
 dinkins = []
 jogar_novamente = 1
-print(branco(pais)) # tirar isso depois
 while jogar_novamente != 0:
     if tentativas <= 0 :
         jogar_novamente = input(f"Quer jogar novamente {branco('[s|n]')}")
