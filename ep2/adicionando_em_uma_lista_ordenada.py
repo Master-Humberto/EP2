@@ -1,5 +1,5 @@
-from termcolor import colored # 15
-
+from termcolor import colored # 1
+from adicionando_cores import * #2
 def adiciona_em_ordem(pais,d,l):
     lista_d = []
     for i in range(0, len(l)):
