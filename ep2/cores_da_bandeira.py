@@ -24,4 +24,3 @@ def color(pais):
         lista_cores.append("branca")
     return random.choice(lista_cores)
     
-print(color('brasil'))

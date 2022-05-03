@@ -1,8 +1,9 @@
-
 from base_de_paises import * 
 from base_de_paises_normalizada import * 
 from normaliza_paises import * 
-def lista_paises():
+import random
+def continente(pais):
     base = normalizado(DADOS)
-    paises = list(base.keys())
-    return paises
+    continente = base[pais]['continente']
+
+    return continente
