@@ -24,12 +24,26 @@ def pais_escolhido():
 pais = pais_escolhido()
 tentativas = 20
 print(f"Suas tenativas são: {branco(tentativas)}")
+print("============================")
+print("|                            |")
+print("| Bem-vindo ao Insper Países |")
+print("|                            |")
+print(" ==== Design de Software ==== ")
+print("")
+print("Comandos:")
+print("")
+print("dica       - entra no mercado de dicas")
+print("desisto    - desiste da rodada")
+print("inventario - exibe sua posição")
+print("Um país foi escolhido, tente adivinhar!")
+print("")
 l= []
 cores = []
 dinkins = []
 jogar_novamente = 1
 while jogar_novamente != 0:
     if tentativas <= 0 :
+        print(f"O país era : {pais}")
         jogar_novamente = input(f"Quer jogar novamente {branco('[s|n]')}")
         if jogar_novamente == 's':
             tentativas = 20
@@ -38,7 +52,7 @@ while jogar_novamente != 0:
             dinkins = []
         else:
             break
-    pergunta = input(f"{branco('Qual seu paplite?')}")
+    pergunta = input(f"{branco('Qual seu paplite? ')}")
     if pergunta == "dica":
         dica, tentativas = mercado_de_dicas(pais,tentativas,cores, dinkins)
         dinkins.append(dica)
