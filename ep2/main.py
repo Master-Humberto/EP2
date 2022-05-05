@@ -64,7 +64,14 @@ while jogar_novamente != 0:
         print("Você acertou!")
         tentativas = 0
     if pergunta == "desisto":
-        break
+        jogar_novamente = input((f"Quer desistir{branco('[s|n]')}?"))
+        if jogar_novamente == "s":
+            print(f"Que deselegante desistir, o país era : {pais}")
+            jogar_novamente = input((f"Quer jogar novamente{branco('[s|n]')}?"))
+            if jogar_novamente == "n":
+                break
+        else:
+            pass
     if pergunta == "inventario":
         print(f"{branco(ajeita(l))}")
         if nada() in dinkins:
