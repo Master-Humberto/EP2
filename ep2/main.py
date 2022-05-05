@@ -70,6 +70,11 @@ while jogar_novamente != 0:
             jogar_novamente = input((f"Quer jogar novamente{branco('[s|n]')}?"))
             if jogar_novamente == "n":
                 break
+            if jogar_novamente == "s":
+                tentativas = 20
+                pais = random.choice(lista_paises())
+                l = []
+                dinkins = []
         else:
             pass
     if pergunta == "inventario":
