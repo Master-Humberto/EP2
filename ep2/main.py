@@ -23,7 +23,7 @@ def pais_escolhido():
 ## Base de paises
 pais = pais_escolhido()
 tentativas = 20
-print(f"Suas tenativas são: {branco(tentativas)}")
+print(f"Suas tentativas são : {branco(tentativas)}")
 print("============================")
 print("|                            |")
 print("| Bem-vindo ao Insper Países |")

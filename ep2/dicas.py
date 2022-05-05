@@ -15,11 +15,16 @@ from lista_letras import *
 def mercado_de_dicas(pais, tentativas,cores, dinkins):
     print("Mercado de dicas")
     print("------------------------------------------")
-    print('1. Cor da bandeira   - custa 4 tentativas')
-    print("2. Letra da capital - custa 3 tentativas")
-    print("3. Área              - custa 6 tentativas")
-    print("4. População         - custa 5 tentativas")
-    print("5. Continente        - custa 7 tentativas")
+    if tentativas >= 4:
+        print('1. Cor da bandeira   - custa 4 tentativas')
+    if tentativas >= 3:
+        print("2. Letra da capital - custa 3 tentativas")
+    if tentativas >= 6:
+        print("3. Área              - custa 6 tentativas")
+    if tentativas >= 5:
+        print("4. População         - custa 5 tentativas")
+    if tentativas >= 7:
+        print("5. Continente        - custa 7 tentativas")
     print("0. Sem dica")
     print("-----------------------------------------")
     print("Escolha sua opção: [0][1][2][3][4][5]")
