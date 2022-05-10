@@ -43,7 +43,7 @@ dinkins = []
 jogar_novamente = 1
 while jogar_novamente != 0:
     if tentativas <= 0 :
-        print(f"O país era : {pais}")
+        print(f"{branco('O país era : ')}{pais}")
         jogar_novamente = input(f"Quer jogar novamente {branco('[s|n]')}")
         if jogar_novamente == 's':
             tentativas = 20
@@ -66,7 +66,7 @@ while jogar_novamente != 0:
     if pergunta == "desisto":
         jogar_novamente = input((f"Quer desistir{branco('[s|n]')}?"))
         if jogar_novamente == "s":
-            print(f"Que deselegante desistir, o país era : {pais}")
+            print(f"{branco('Que deselegante desistir, o país era')} :{pais}")
             jogar_novamente = input((f"Quer jogar novamente{branco('[s|n]')}?"))
             if jogar_novamente == "n":
                 break
@@ -85,7 +85,7 @@ while jogar_novamente != 0:
     if nada() in dinkins:
         dinkins.remove(f"{nada()}")
         print(l) 
-    elif pergunta in lista_paises():
+    elif pergunta in lista_paises() :
         adiciona_em_ordem(pergunta, distancia(pais, pergunta), l)
         if nada() in dinkins:
             dinkins.remove(nada())
