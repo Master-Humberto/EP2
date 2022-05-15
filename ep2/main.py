@@ -85,7 +85,7 @@ while jogar_novamente != 0:
     if nada() in dinkins:
         dinkins.remove(f"{nada()}")
         print(l) 
-    elif pergunta in lista_paises() :
+    elif pergunta in lista_paises() and pergunta != pais:
         adiciona_em_ordem(pergunta, distancia(pais, pergunta), l)
         if nada() in dinkins:
             dinkins.remove(nada())
